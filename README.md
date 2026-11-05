@@ -1,6 +1,6 @@
 # EnvValidator 🛡️
 
-A lightweight C# utility designed to parse, validate, and check configuration/environment files for required keys and syntax errors.
+A lightweight C# utility designed to parse, validate and check configuration or environment files for required keys and syntax errors.
 
 ## Features
 - **Robust Parsing:** Strips comments, parses key-value pairs, and detects duplicate keys.

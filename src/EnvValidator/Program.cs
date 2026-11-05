@@ -11,7 +11,7 @@ class Program
 
         string filePath = args.Length > 0 ? args[0] : ".env";
 
-        // Generate a sample config file just for quick demo execution
+        // This is just to generate a sample config file for some quick demo execution
         if (!File.Exists(filePath))
         {
             File.WriteAllText(filePath, """
@@ -30,11 +30,11 @@ class Program
 
         if (result.IsValid)
         {
-            Console.WriteLine("✅ Configuration is valid and ready!");
+            Console.WriteLine("Configuration is valid and ready!");
         }
         else
         {
-            Console.WriteLine("❌ Configuration validation failed with the following errors:");
+            Console.WriteLine("Configuration validation failed with the following errors:");
             foreach (var error in result.Errors)
             {
                 Console.WriteLine($"  - {error}");

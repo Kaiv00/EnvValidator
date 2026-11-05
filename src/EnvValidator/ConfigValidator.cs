@@ -55,7 +55,7 @@ public class ConfigValidator
 
         result.Config = rawConfig;
 
-        // Verify required keys exist and aren't empty
+        // Verify required keys exist and aren't empty(Just in case)
         foreach (var reqKey in requiredKeys)
         {
             if (!rawConfig.ContainsKey(reqKey) || string.IsNullOrWhiteSpace(rawConfig[reqKey]))
